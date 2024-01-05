@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Services.css';
 
 const Services = () => {
     useEffect(() => {
@@ -29,7 +30,7 @@ const Services = () => {
                     </div>
                     <div className="card">
                         <div className="box">
-                            <i className="fa fa-file-code-o"></i>
+                            <i className="fa fa-cogs"></i>
                             <div className="text">Análisis de código</div>
                             <p>Observar el entorno de desarrollo y el código fuente entendiendo su funcionamiento, para
                                 optimizar el rendimiento con control de errores, logs y debugging para irregularidades.</p>

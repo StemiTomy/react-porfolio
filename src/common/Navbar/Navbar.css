@@ -1,0 +1,132 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 1em 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3 ease;
+}
+
+.navbar .max-width {
+    padding: 0 1em;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: rgb(83, 83, 83);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar.sticky .logo a span {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navbar.sticky .logo a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a span {
+    color: crimson;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: rgb(83, 83, 83);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar.sticky .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* estilo del boton de menu */
+.menu-btn {
+    color: #535353;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar.sticky .menu-btn {
+    color: black;
+}
+
+@media (max-width: 975px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+        color: white;
+    }
+
+    .menu-btn:hover i.active:before {
+        color: crimson;
+        font-size: 1.1em;
+        transition: all 0.4s ease;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        color: white;
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+}

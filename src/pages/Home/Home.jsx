@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
+import './Home.css';
 
 const Home = () => {
     useEffect(() => {

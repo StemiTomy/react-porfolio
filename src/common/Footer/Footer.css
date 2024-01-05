@@ -1,0 +1,15 @@
+/* Footer.css */
+footer {
+    background: white;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Projects.css';
 
 const Projects = () => {
     useEffect(() => {
@@ -17,9 +18,7 @@ const Projects = () => {
                             <p>Se trata de un juego para plataforma Android e IOS desarollado con el motor Unity con C# y
                                 Firebase como base de datos. Dejo el link de descarga para más.
                             </p>
-                            <a href="https://stelut.itch.io/travel-time-game"
-                                style={{textDecoration: 'underline', color: 'white'}}> Travel
-                                Time Game</a>
+                            <a href="https://stelut.itch.io/travel-time-game" target="_blank" rel="noreferrer">Travel Time Game</a>
                         </div>
                     </div>
                     <div className="card">

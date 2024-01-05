@@ -1,8 +1,28 @@
 import React, { useEffect } from 'react';
+import Typed from 'typed.js';
+import './About.css';
 
 const About = () => {
     useEffect(() => {
         document.title = "Stelut Tomoiaga Grigore | About";
+    }, []);
+
+    // scirpt para escribir
+    useEffect(() => {
+        const options = {
+            strings: ["Programador", "Diseñador", "Analista"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        };
+        
+        // Inicializando Typed
+        const typed = new Typed(".typing", options);
+
+        // Limpieza
+        return () => {
+            typed.destroy();
+        };
     }, []);
 
     return (
@@ -15,7 +35,7 @@ const About = () => {
                     </div>
                     <div className="column right">
                         <div className="text">
-                            Soy Stelut, soy <span className="typing-2"></span>
+                            Soy Stelut, soy <span className="typing"></span>
                         </div>
                         <p>Soy un programador, desarrollador con experiencia en aplicaciones multiplataforma y web, con
                             amplia experiencia en Java, JavaScript, Kotlin y Python. Diseñador de páginas web
