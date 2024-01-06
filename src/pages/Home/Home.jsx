@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 import './Home.css';
 
@@ -7,6 +6,10 @@ const Home = () => {
     useEffect(() => {
         document.title = "Stelut Tomoiaga Grigore";
     }, []);
+
+    const sendEmail = () => {
+        window.location.href = 'mailto:stemitomy@gmail.com';
+    };
 
     // scirpt para escribir
     useEffect(() => {
@@ -33,7 +36,7 @@ const Home = () => {
                     <div className="texto1">Hola, mi nombre es</div>
                     <div className="texto2">Stelut Grigore Tomoiaga</div>
                     <div className="texto3">Soy <span className="typing"></span></div>
-                    <Link to="/contact">Contrátame</Link>
+                    <div className="contact" onClick={sendEmail}>Contrátame</div>
                 </div>
             </div>
         </section>

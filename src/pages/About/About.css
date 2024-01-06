@@ -20,6 +20,7 @@
 
 .about-content .column.right {
     width: 55%;
+    font-size: 2vw;
 }
 
 .about-content .column.right p {
@@ -38,7 +39,7 @@
 }
 
 /* Button */
-.about-content .column.right a{
+.about-content .column.right a {
     display: inline-block;
     background: crimson;
     color: white;
@@ -54,4 +55,43 @@
 .about-content .column.right a:hover {
     color: crimson;
     background: none;
+}
+
+@media (max-width: 1100px) {
+    .about-content .column.left img {
+        height: 500px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 950px) {
+    .about div {
+        max-width: 800px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content .column.left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about-content .column.right {
+        flex: 100%;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-content .column.right {
+        font-size: 22px;
+    }
+}
+@media (max-width: 690px) {
+    .about .max-width {
+      padding: 0 2.5em;
+    }
 }

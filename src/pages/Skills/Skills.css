@@ -3,8 +3,14 @@
     content: "¿qué sé?";
 }
 
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .skills .skills-content .column {
-    width: calc(50% - 30px);
+    flex: 1;
+    margin: 0 15px;
 }
 
 .skills .skills-content .left .text {
@@ -67,4 +73,11 @@
 
 .skills-content .right .spring::before {
     width: 90%;
+}
+
+@media (max-width: 725px) {
+    .skills .skills-content {
+        flex-direction: column;
+        align-content: center;
+    }
 }

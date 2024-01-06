@@ -7,17 +7,18 @@ import Projects from './pages/Projects/Projects';
 import Services from './pages/Services/Services';
 import Skills from './pages/Skills/Skills';
 import Footer from './common/Footer/Footer';
-import Socails from './common/Socials/Socials';
 
-// 1. Conocimientos: poner que si la mediaQuery es de móvil pues poner los % debajo y no al lado.
+
 // 2. Home: boton Contratame, arreglar boton para que puedan enviarme un email (en móvil no va ni en Socials).
-// 3. Socials: arreglarlo en responsive.
+//  EXTRA: (EN IPHONE)
+
+// E.1: Mejorar lo de Stelut Tomoiaga CV => (Foto) Stelut Tomoiaga (Icono azul verificado).
+// E.2: Mejorar hablando de nuevas tecnologías y/o proyectos.
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Socails />
       <Routes>
         <Route path="*" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
