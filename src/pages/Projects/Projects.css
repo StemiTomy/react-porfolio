@@ -1,9 +1,4 @@
 /* Projects.css */
-.projects .title::after {
-    content: "¿qué he hecho?";
-    background: white;
-}
-
 .projects .projects-content a:hover {
     color: crimson;
     background: white;
@@ -15,9 +10,9 @@
     display: inline-block;
     background: crimson;
     color: white;
-    font-size: 1em;
+    font-size: clamp(8px, 1em, 16px);
     font-weight: 600;
-    padding: 8px 16px;
+    padding: 0.5em 1em;
     margin-top: 1.5em;
     border-radius: 6px;
     border: 2px solid crimson;

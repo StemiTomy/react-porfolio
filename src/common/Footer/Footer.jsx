@@ -5,8 +5,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer>
-            <span>Creado por <Link to="/home">Stelut Grigore Tomoiaga</Link> | <span className="fa fa-copyright"></span> Todos los derechos
-                reservados.</span>
+            <span>Creado por <Link to="/home">Stelut Grigore Tomoiaga</Link>.</span>
         </footer>
     );
 };

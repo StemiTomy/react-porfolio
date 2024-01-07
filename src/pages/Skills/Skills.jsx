@@ -24,38 +24,45 @@ const Skills = () => {
                     <div className="column right">
                         <div className="bars">
                             <div className="info">
-                                <span>Java</span>
-                                <span>100%</span>
+                                <span>Java (Spring Boot)</span>
+                                <span>80%</span>
                             </div>
                             <div className="line java"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>JS, CSS y HTML</span>
-                                <span>90%</span>
-                            </div>
-                            <div className="line html5"></div>
-                        </div>
-                        <div className="bars">
-                            <div className="info">
-                                <span>SQL (MySQL, MSSQL, SQL y sus variantes)</span>
-                                <span>80%</span>
-                            </div>
-                            <div className="line mysql"></div>
-                        </div>
-                        <div className="bars">
-                            <div className="info">
-                                <span>Python, Kotlin</span>
+                                <span>Python</span>
                                 <span>80%</span>
                             </div>
                             <div className="line python"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>Spring</span>
-                                <span>90%</span>
+                                <span>JavaScript (React, Angular)</span>
+                                <span>80%</span>
                             </div>
-                            <div className="line spring"></div>
+                            <div className="line js"></div>
+                        </div>
+                        <div className="bars">
+                            <div className="info">
+                                <span>SQL (MySQL, PostgreSQL, MSSQL)</span>
+                                <span>70%</span>
+                            </div>
+                            <div className="line mysql"></div>
+                        </div>
+                        <div className="bars">
+                            <div className="info">
+                                <span>CSS (Vanilla & Bootstrap)</span>
+                                <span>70%</span>
+                            </div>
+                            <div className="line css"></div>
+                        </div>
+                        <div className="bars">
+                            <div className="info">
+                                <span>C#, Kotlin, Swift</span>
+                                <span>50%</span>
+                            </div>
+                            <div className="line others"></div>
                         </div>
                     </div>
                 </div>

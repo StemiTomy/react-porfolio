@@ -25,7 +25,7 @@
 
 .navbar .logo a {
     color: rgb(83, 83, 83);
-    font-size: 35px;
+    font-size: clamp(12px, 4vw, 35px);
     font-weight: 600;
 }
 
@@ -50,15 +50,15 @@
 
 .navbar .menu li a {
     color: rgb(83, 83, 83);
-    font-size: 18px;
+    font-size: clamp(10px, 4vw, 18px);
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 1em;
     transition: color 0.3s ease;
 }
 
 .navbar.sticky .menu li a {
     color: white;
-    font-size: 18px;
+    font-size: clamp(10px, 4vw, 18px);
     font-weight: 500;
     margin-left: 1em;
     transition: color 0.3s ease;
@@ -76,7 +76,7 @@
 /* estilo del boton de menu */
 .menu-btn {
     color: #535353;
-    font-size: 1.8em;
+    font-size: clamp(10px, 6vw, 35px);
     cursor: pointer;
     display: none;
 }
@@ -111,11 +111,6 @@
 }
 
 @media (max-width: 975px) {
-    .navbar .logo a {
-        font-size: 4vw;
-        max-font-size: 35px;
-    }
-
     .menu-btn {
         display: block;
         margin-left: 0.5em;
@@ -141,7 +136,7 @@
         top: 0;
         background: #111;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 5rem;
         transition: all 0.4s ease;
     }
 
@@ -166,7 +161,7 @@
         color: white;
         display: inline-block;
         margin: 1em 1em;
-        font-size: 1.5em;
+        font-size: clamp(20px, 4vw, 24px);
     }
 
 }

@@ -14,7 +14,7 @@ const Home = () => {
     // scirpt para escribir
     useEffect(() => {
         const options = {
-            strings: ["Programador", "Diseñador", "Analista"],
+            strings: ["Programador", "Diseñador"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true

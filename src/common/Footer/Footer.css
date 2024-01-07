@@ -1,8 +1,12 @@
 /* Footer.css */
 footer {
     background: white;
-    padding: 20px 25px;
+    padding: 1em 1em;
     text-align: center;
+}
+
+footer span {
+    font-size: clamp(12px, 3vw, 16px);
 }
 
 footer span a {
