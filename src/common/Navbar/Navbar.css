@@ -25,8 +25,9 @@
 
 .navbar .logo a {
     color: rgb(83, 83, 83);
-    font-size: clamp(12px, 4vw, 35px);
+    font-size: clamp(16px, 4vw, 35px);
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .navbar.sticky .logo a span {
@@ -76,7 +77,7 @@
 /* estilo del boton de menu */
 .menu-btn {
     color: #535353;
-    font-size: clamp(10px, 6vw, 35px);
+    font-size: 30px;
     cursor: pointer;
     display: none;
 }

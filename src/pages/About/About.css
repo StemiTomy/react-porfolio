@@ -20,7 +20,7 @@
 }
 
 .about-content .column.right .text {
-    font-size: clamp(10px, 1.5em, 25px);
+    font-size: clamp(12px, 1.4em, 25px);
 }
 
 .about-content .column.right p {
@@ -54,7 +54,9 @@
 @media (max-width: 1100px) {
     .about-content .column.left img {
         height: 100%;
+        min-height: 300px;
         width: 100%;
+        min-width: 280px;
         object-fit: cover;
         border-radius: 15px;
     }
@@ -72,16 +74,11 @@
     .about-content .column.left {
         display: flex;
         justify-content: center;
-        margin: 0 auto 1em;
+        padding-right: 0px;
+        margin: 0 auto 2em;
     }
 
     .about-content .column.right {
         flex: 100%;
-    }
-}
-
-@media (max-width: 690px) {
-    .about .max-width {
-      padding: 0 1em;
     }
 }

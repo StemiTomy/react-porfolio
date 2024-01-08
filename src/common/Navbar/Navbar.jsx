@@ -109,6 +109,9 @@ const Navbar = () => {
     const togglePhone = () => {
         if (isMobile) {
             copyToClipboard();
+            setTimeout(() => {
+                window.location.href = `tel:${phoneNumber}`;
+            }, 1000);
         } else {
             setShowPhone(!showPhone);
         }
@@ -126,14 +129,14 @@ const Navbar = () => {
                     <li><Link to="/skills" onClick={closeMenu}>Conocimientos</Link></li>
                 </ul>
                 <div className={`socials ${menuActive ? 'active' : ''}`}>
-                    <div className="icon-container">
-                        <i className="fa fa-github" onClick={goToGitHub} aria-hidden="true"></i>
+                    <div className="icon-container"  onClick={goToGitHub}>
+                        <i className="fa fa-github" aria-hidden="true"></i>
                     </div>
-                    <div className="icon-container">
-                        <i className="fa fa-envelope" onClick={sendEmail} aria-hidden="true"></i>
+                    <div className="icon-container"  onClick={sendEmail}>
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
                     </div>
-                    <div className="icon-container">
-                        <i className="fa fa-phone" onClick={togglePhone} aria-hidden="true"></i>
+                    <div className="icon-container" onClick={togglePhone}>
+                        <i className="fa fa-phone" aria-hidden="true"></i>
                         {showPhone && !isMobile && phoneNumber && <span id="typed-phone"></span>}
                         {copySuccess && <span className="copy-success-message">{copySuccess}</span>}
                     </div>

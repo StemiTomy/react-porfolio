@@ -25,7 +25,7 @@
 .socials i {
     color: white;
     cursor: pointer;
-    font-size: clamp(10px, 2vw, 18px);
+    font-size: 18px;
     margin: 0.5em 0;
     transition: color 0.3s, transform 0.3s;
 }
@@ -60,7 +60,7 @@
 
         position: relative;
         margin-top: 0;
-        margin-left: 30vw;
+        margin-left: 10vw;
         padding: 0.4em 0.4em;
     }
 

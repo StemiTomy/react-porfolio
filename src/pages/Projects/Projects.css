@@ -2,8 +2,7 @@
 .projects .projects-content a:hover {
     color: crimson;
     background: white;
-    transform: scale(1.08);
-    border: none;
+    border: 2px solid white;
 }
 
 .projects .projects-content a {

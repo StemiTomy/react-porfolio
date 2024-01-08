@@ -13,7 +13,7 @@ const Services = () => {
                     <div className="card">
                         <div className="box">
                             <i className="fa fa-code"></i>
-                            <div className="text">Desarrollos</div>
+                            <div className="text">Desarrollo</div>
                             <p>Implementación de aplicaciones para todo tipo de dispositivos y plataformas en diferentes
                                 lenguajes. Entre los principales Java, Python y JavaScript.</p>
                         </div>
