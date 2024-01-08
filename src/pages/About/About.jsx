@@ -31,7 +31,7 @@ const About = () => {
                 <h2 className="title">Sobre mí</h2>
                 <div className="about-content">
                     <div className="column left">
-                        <img src="/perfil1r.png" alt="perfil 1" />
+                        <img src={`${process.env.PUBLIC_URL}/perfil1r.png`} alt="perfil 1" />
                     </div>
                     <div className="column right">
                         <div className="text">
