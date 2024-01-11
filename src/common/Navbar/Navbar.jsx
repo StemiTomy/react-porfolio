@@ -1,8 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
 import "./Navbar.css";
 import "./Socials.css";
+import { LanguageContext } from '../../LanguageContext';
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false);
@@ -117,16 +118,26 @@ const Navbar = () => {
         }
     };
 
+    const { language, setLanguage, translations } = useContext(LanguageContext);
+
+    const handleLanguageChange = (event) => {
+        setLanguage(event.target.value);
+    };
+
     return (
         <nav className="navbar">
             <div className="max-width">
                 <div className="logo"><Link to="/home">Stelut Tomoiaga <span>CV</span></Link></div>
                 <ul className={`menu ${menuActive ? 'active' : ''}`}>
-                    <li><Link to="/home" onClick={closeMenu}>Página Principal</Link></li>
-                    <li><Link to="/about" onClick={closeMenu}>Sobre mi</Link></li>
-                    <li><Link to="/projects" onClick={closeMenu}>Proyectos</Link></li>
-                    <li><Link to="/services" onClick={closeMenu}>Servicios</Link></li>
-                    <li><Link to="/skills" onClick={closeMenu}>Conocimientos</Link></li>
+                    <li><Link to="/home" onClick={closeMenu}>{translations.home.sectionTitle}</Link></li>
+                    <li><Link to="/about" onClick={closeMenu}>{translations.about.sectionTitle}</Link></li>
+                    <li><Link to="/projects" onClick={closeMenu}>{translations.projects.sectionTitle}</Link></li>
+                    <li><Link to="/services" onClick={closeMenu}>{translations.services.sectionTitle}</Link></li>
+                    <li><Link to="/skills" onClick={closeMenu}>{translations.skills.sectionTitle}</Link></li>
+                    <select onChange={handleLanguageChange} value={language} className="language-select">
+                        <option value="es">{translations.languageOptions.es}</option>
+                        <option value="en">{translations.languageOptions.en}</option>
+                    </select>
                 </ul>
                 <div className={`socials ${menuActive ? 'active' : ''}`}>
                     <div className="icon-container"  onClick={goToGitHub}>

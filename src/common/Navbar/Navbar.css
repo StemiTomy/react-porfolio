@@ -100,6 +100,25 @@
     animation: fadeOut 1s ease-out 1s forwards;
 }
 
+.navbar .menu .language-select {
+    color: #535353;
+    font-size: clamp(10px, 4vw, 18px);
+    background: transparent;
+    border: none;
+    margin-left: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar.sticky .menu .language-select {
+    color: white;
+}
+
+.navbar .menu .language-select:hover {
+    color: crimson;
+}
+
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -111,7 +130,7 @@
     }
 }
 
-@media (max-width: 975px) {
+@media (max-width: 1035px) {
     .menu-btn {
         display: block;
         margin-left: 0.5em;
@@ -165,4 +184,10 @@
         font-size: clamp(20px, 4vw, 24px);
     }
 
+    .navbar .menu .language-select {
+        color: white;
+        margin: 0.1em 0.1em;
+        font-weight: 400;
+        font-size: clamp(20px, 4vw, 24px);
+    }
 }

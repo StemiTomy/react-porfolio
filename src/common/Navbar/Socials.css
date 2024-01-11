@@ -52,7 +52,7 @@
 }
 
 /* Socials, quiero ponerlo a la izq del botón */
-@media (max-width: 975px) {
+@media (max-width: 1035px) {
     .socials {
         display: flex;
         flex-direction: row;

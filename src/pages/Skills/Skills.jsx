@@ -1,25 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './Skills.css';
+import { LanguageContext } from '../../LanguageContext';
 
 const Skills = () => {
+    const { translations } = useContext(LanguageContext);
+    
     useEffect(() => {
-        document.title = "Stelut Tomoiaga Grigore | Skills";
-    }, []);
+        document.title = translations.services.pageTitle;
+    }, [translations.services.pageTitle]);
 
     return (
         <section className="skills" id="skills">
             <div className="max-width">
-                <h2 className="title">Conocimientos</h2>
+                <h2 className="title">{translations.skills.sectionTitle}</h2>
                 <div className="skills-content">
                     <div className="column left">
-                        <div className="text">Mis habilidades y experiencias</div>
-                        <p>Tengo un amplio conocimiento del desarrollo de software, ya sea en la POO
-                            (Programación Orientada a Objetos) como en el acceso y la manipulación de datos mediante consola
-                            o interfaces. Trabajo con diferentes lenguajes (Java, Python, Kotlin) junto con las librerías y
-                            los framewokrs correspondientes. Tengo experiencia en debug, documentación y rápida
-                            implementación
-                            de nuevas funciones o aplicaciones, como por ejemplo utilizando Spring Boot (app: Script
-                            Manager).</p>
+                        <div className="text">{translations.skills.textTitle}</div>
+                        <p>{translations.skills.textDescription}</p>
                     </div>
                     <div className="column right">
                         <div className="bars">

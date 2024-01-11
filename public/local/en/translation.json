@@ -1,0 +1,64 @@
+{
+    "languageOptions": {
+        "es": "Spanish",
+        "en": "English"
+    },
+    "home": {
+        "pageTitle": "Stelut Tomoiaga Grigore",
+        "sectionTitle": "Home Page",
+        "greeting": "Hi, my name is",
+        "name": "Stelut Grigore Tomoiaga",
+        "professionPrefix": "I am a",
+        "professions": [
+            "Programmer",
+            "Designer"
+        ],
+        "hireMe": "Hire Me"
+    },
+    "about": {
+        "pageTitle": "Stelut Tomoiaga Grigore | About me",
+        "sectionTitle": "About Me",
+        "intro": "Stelut, a ",
+        "description": "I'm a software developer with experience in cross-platform and web applications, with extensive experience in Java (Spring Boot), Python, JavaScript (React, Angular). Designer of responsive web pages responsive, with an attractive interface for the end user and intuitive use. intuitive to use. I also have experience with SVN (Git), data structures (MVC, REST) and doing logs, debugging and project documentation. Self-taught and trained in the Higher Degree in Multiplatform Application Development (DAM). To know more about me, please, download my CV.",
+        "downloadCV": "Download CV"
+    },
+    "projects": {
+        "pageTitle": "Stelut Tomoiaga Grigore | Projects",
+        "sectionTitle": "Projects",
+        "items": [
+            {
+                "title": "Travel Time Game",
+                "description": "It's a game for Android and IOS platforms developed with the Unity engine using C# and Firebase as a database. Here is the download link."
+            },
+            {
+                "title": "Script Manager",
+                "description": "Project to execute SQL scripts in development, pre-production, or production environments to speed up common incidents. The app is made with Spring Boot (Maven, Hibernate, XML), Java, JS (Angular), HTML, and CSS (Bootstrap). We use JDBC or JPA for queries as appropriate. As it's not a public project, I can't provide a demo."
+            }
+        ]
+    },
+    "services": {
+        "pageTitle": "Stelut Tomoiaga Grigore | Services",
+        "sectionTitle": "Services",
+        "items": [
+            {
+                "title": "Development",
+                "description": "Implementation of applications for all types of devices and platforms in different languages. Among the main ones Java, Python and JavaScript."
+            },
+            {
+                "title": "Web Design",
+                "description": "Creation and modification of web pages using HTML, CSS and JavaScript along with its frameworks (React, Angular, Bootstrap) among others."
+            },
+            {
+                "title": "Analysis",
+                "description": "Observe the development environment and the code and understand how it works to optimize performance with error control, logs, debugging and documentation."
+            }
+        ]
+    },
+    "skills": {
+        "pageTitle": "Stelut Tomoiaga Grigore | Skills",
+        "sectionTitle": "Skills",
+        "textTitle": "My skills and experience",
+        "textDescription": "I have a broad knowledge of software development, both in OOP (Object Oriented Programming) and in data access and manipulation via console or interfaces. I work with different languages (Java, Python, Kotlin) along with the corresponding libraries and framewokrs. I have experience in debugging, documentation and rapid implementation of new features or applications, such as using Spring Boot (app: Script Manager)."
+    },
+    "footer": "Created by "
+}
