@@ -17,3 +17,17 @@
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
+
+.projects-content .box .icon-container {
+    display: block;
+}
+
+.projects-content .box .icon-container i{
+    cursor: pointer;
+    padding-top: 0.5em;
+}
+
+.projects-content .box .icon-container i:hover{
+    color: white;
+    transition: all 0.3s ease;
+}

@@ -27,6 +27,10 @@
         "sectionTitle": "Projects",
         "items": [
             {
+                "title": "The Movie Data Base",
+                "description": "Web application developed with React designed to provide information about movies. Authentication and user registration is integrated with MongoDB, an email, password and TMDB API key is required to enable the backend (made in NodeJS with express) to facilitate queries to the TMDB database."
+            },
+            {
                 "title": "Travel Time Game",
                 "description": "It's a game for Android and IOS platforms developed with the Unity engine using C# and Firebase as a database. Here is the download link."
             },
