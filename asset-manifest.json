@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.b8ca4920.css",
-    "main.js": "./static/js/main.d9f1b4e6.js",
+    "main.css": "./static/css/main.4ae59886.css",
+    "main.js": "./static/js/main.44fb1062.js",
     "static/media/silla.jpg": "./static/media/silla.11b001c29d502e07e2fc.jpg",
     "index.html": "./index.html",
-    "main.b8ca4920.css.map": "./static/css/main.b8ca4920.css.map",
-    "main.d9f1b4e6.js.map": "./static/js/main.d9f1b4e6.js.map"
+    "main.4ae59886.css.map": "./static/css/main.4ae59886.css.map",
+    "main.44fb1062.js.map": "./static/js/main.44fb1062.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8ca4920.css",
-    "static/js/main.d9f1b4e6.js"
+    "static/css/main.4ae59886.css",
+    "static/js/main.44fb1062.js"
   ]
 }
