@@ -23,7 +23,7 @@ const Projects = () => {
                             <i class="fa fa-film"></i>
                             <div className="text">{translations.projects.items[0].title}</div>
                             <p>{translations.projects.items[0].description}</p>
-                            <a href="https://web-app-50f58.web.app/register" target="_blank" rel="noreferrer">The Movie Data Base</a>
+                            <a href="https://web-app-50f58.web.app/" target="_blank" rel="noreferrer">The Movie Data Base</a>
                             <div className="icon-container"  onClick={goToGitHub}>
                                 <i className="fa fa-github" aria-hidden="true"></i>
                             </div>
