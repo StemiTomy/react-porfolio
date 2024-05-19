@@ -15,8 +15,8 @@ Implementado la funcionalidad de escribir en home.jsx con un hook y la librería
 Poner el archivo CNAME en public. La licencia va en la raíz.
 
 Ejecutar la web app.
-npm start
+```npm start```
 
 Para hacer deploy:
-npm run build
-npm run deploy (hace lo de npm run build automáticamente)
+```npm run build```
+```npm run deploy``` (hace lo de npm run build automáticamente)
