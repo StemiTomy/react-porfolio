@@ -20,7 +20,7 @@ const About = () => {
 
     console.log("Hola?")
 
-    const cvLink = language === 'es' ? 'https://cdn.steluttomoiaga.com//Stelut_CV.pdf' : 'https://cdn.steluttomoiaga.com//Stelut_CV_EN.pdf';
+    const cvLink = language === 'es' ? 'https://cdn.steluttomoiaga.com/Stelut_CV.pdf' : 'https://cdn.steluttomoiaga.com/Stelut_CV_EN.pdf';
 
     // scirpt para escribir
     useEffect(() => {
