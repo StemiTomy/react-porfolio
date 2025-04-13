@@ -51,6 +51,10 @@
     background: none;
 }
 
+.typing::after {
+    display: none !important;
+}
+
 @media (max-width: 1100px) {
     .about-content .column.left img {
         height: 100%;

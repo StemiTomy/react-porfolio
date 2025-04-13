@@ -21,7 +21,7 @@ const Skills = () => {
                     <div className="column right">
                         <div className="bars">
                             <div className="info">
-                                <span>Java (Spring Boot)</span>
+                                <span>Java</span>
                                 <span>80%</span>
                             </div>
                             <div className="line java"></div>
@@ -35,28 +35,28 @@ const Skills = () => {
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>JavaScript (React, Angular)</span>
+                                <span>JavaScript</span>
                                 <span>80%</span>
                             </div>
                             <div className="line js"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>SQL (MySQL, PostgreSQL, MSSQL)</span>
+                                <span>SQL</span>
                                 <span>70%</span>
                             </div>
                             <div className="line mysql"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>CSS (Vanilla & Bootstrap)</span>
+                                <span>CSS</span>
                                 <span>70%</span>
                             </div>
                             <div className="line css"></div>
                         </div>
                         <div className="bars">
                             <div className="info">
-                                <span>C#, Kotlin, Swift</span>
+                                <span>Go, C#, Kotlin, Swift</span>
                                 <span>50%</span>
                             </div>
                             <div className="line others"></div>

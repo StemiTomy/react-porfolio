@@ -18,25 +18,7 @@ const About = () => {
         }
     }, [translations]);
 
-    console.log("Hola?")
-
     const cvLink = language === 'es' ? 'https://cdn.steluttomoiaga.com/Stelut_CV.pdf' : 'https://cdn.steluttomoiaga.com/Stelut_CV_EN.pdf';
-
-    // scirpt para escribir
-    useEffect(() => {
-        const options = {
-            strings: translations.home.professions,
-            typeSpeed: 100,
-            backSpeed: 60,
-            loop: true
-        };
-
-        // Inicializando Typed
-        const typed = new Typed(".typing", options);
-
-        // Limpieza
-        return () => typed.destroy();
-    }, [translations.home.professions]);
 
     return (
         <section className="about" id="about">
