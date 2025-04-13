@@ -7,8 +7,18 @@ const About = () => {
     const { translations, language } = useContext(LanguageContext);
     
     useEffect(() => {
-        document.title = translations.home.pageTitle;
-    }, [translations.home.pageTitle]);
+        if (translations?.home?.professions && document.querySelector(".typing")) {
+            const typed = new Typed(".typing", {
+                strings: translations.home.professions,
+                typeSpeed: 100,
+                backSpeed: 60,
+                loop: true
+            });
+            return () => typed.destroy();
+        }
+    }, [translations]);
+
+    console.log("Hola?")
 
     const cvLink = language === 'es' ? '/Stelut_CV.pdf' : '/Stelut_CV_EN.pdf';
 
@@ -25,9 +35,7 @@ const About = () => {
         const typed = new Typed(".typing", options);
 
         // Limpieza
-        return () => {
-            typed.destroy();
-        };
+        return () => typed.destroy();
     }, [translations.home.professions]);
 
     return (
@@ -36,7 +44,7 @@ const About = () => {
                 <h2 className="title">{translations.about.sectionTitle}</h2>
                 <div className="about-content">
                     <div className="column left">
-                        <img src={`${process.env.PUBLIC_URL}/perfil1r.png`} alt="Profile 1" />
+                        <img src={`/perfil1r.png`} alt="Profile 1" />
                     </div>
                     <div className="column right">
                         <div className="text">
