@@ -20,7 +20,7 @@ const About = () => {
 
     console.log("Hola?")
 
-    const cvLink = language === 'es' ? '/Stelut_CV.pdf' : '/Stelut_CV_EN.pdf';
+    const cvLink = language === 'es' ? 'https://cdn.steluttomoiaga.com//Stelut_CV.pdf' : 'https://cdn.steluttomoiaga.com//Stelut_CV_EN.pdf';
 
     // scirpt para escribir
     useEffect(() => {
@@ -44,7 +44,7 @@ const About = () => {
                 <h2 className="title">{translations.about.sectionTitle}</h2>
                 <div className="about-content">
                     <div className="column left">
-                        <img src={`/perfil1r.png`} alt="Profile 1" />
+                        <img src={`https://cdn.steluttomoiaga.com/foto.webp`} alt="Foto de perfil 1" />
                     </div>
                     <div className="column right">
                         <div className="text">
