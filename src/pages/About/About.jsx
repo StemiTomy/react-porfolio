@@ -26,7 +26,7 @@ const About = () => {
                 <h2 className="title">{translations.about.sectionTitle}</h2>
                 <div className="about-content">
                     <div className="column left">
-                        <img src={`https://cdn.steluttomoiaga.com/foto.webp`} alt="Foto de perfil 1" />
+                        <img src={`https://cdn.steluttomoiaga.com/foto_yo.webp`} alt="Foto de perfil 1" />
                     </div>
                     <div className="column right">
                         <div className="text">

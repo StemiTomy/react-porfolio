@@ -134,10 +134,13 @@ const Navbar = () => {
                     <li><Link to="/projects" onClick={closeMenu}>{translations.projects.sectionTitle}</Link></li>
                     <li><Link to="/services" onClick={closeMenu}>{translations.services.sectionTitle}</Link></li>
                     <li><Link to="/skills" onClick={closeMenu}>{translations.skills.sectionTitle}</Link></li>
-                    <select onChange={handleLanguageChange} value={language} className="language-select">
-                        <option value="es">{translations.languageOptions.es}</option>
-                        <option value="en">{translations.languageOptions.en}</option>
-                    </select>
+                    <li>
+                        <label htmlFor="lang">🌐 Language:</label>
+                        <select onChange={handleLanguageChange} value={language} className="language-select">
+                            <option value="es">{translations.languageOptions.es}</option>
+                            <option value="en">{translations.languageOptions.en}</option>
+                        </select>
+                    </li>
                 </ul>
                 <div className={`socials ${menuActive ? 'active' : ''}`}>
                     <div className="icon-container"  onClick={goToGitHub}>
